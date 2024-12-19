@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Meter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Smart Meter</div>
+        <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Smart Meter Dashboard</h1>
+            <div id="walletInfo" class="wallet-info">
+                Wallet: <span>Not Connected</span>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="left-section">
+                <button class="button" onclick="storeTestData()">Add Test Data</button>
+                
+                <h3>View Data</h3>
+                <input type="text" id="meterId" placeholder="Enter Meter ID">
+                <button class="button" onclick="getMeterData()">Get Meter Data</button>
+                
+                <div id="meterInfo" class="info"></div>
+            </div>
+
+            <div class="right-section">
+                <div class="bill-section">
+                    <h3>Bill Details</h3>
+                    <p id="tariffRate">Tariff Rate: ₹<span>0</span> /kWh</p>
+                    <p id="billAmount">Bill Amount: <span>0</span></p>
+                    <button class="button" onclick="payBill()">Pay Bill</button>
+                </div>
+
+                <div id="transactionStatus" class="status"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.0.0/dist/ethers.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
