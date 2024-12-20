@@ -9,6 +9,7 @@ This project demonstrates a decentralized smart meter system built on a blockcha
 
 The system leverages the Ethereum blockchain with MetaMask for wallet interaction and Ganache for local Ethereum Virtual Machine (EVM) deployment.
 
+![flowchart](./images/flowchart.jpg)
 ## Features
 - **Meter Data Management:** Store and retrieve data for specific meters.
 - **Bill Calculation:** Automatically calculates the bill based on consumption.
